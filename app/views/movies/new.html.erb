@@ -1,0 +1,9 @@
+<form action="<%= movies_path %>" method="POST">
+    <input type="hidden" value="<%= form_authenticity_token %>" name="authenticity_token" />
+
+    title: <input placeholder="title" type="text" name="title" />
+    <br>
+    duration: <input placeholder="duration" type="number" name="duration" />
+    <br>
+    <button type="submit">Submit</button>
+</form>
